@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* #header {
+  position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+  width: 100%;
+  height: 71px;
+}
+* #header .header-nav {
+  width: 88%;
+  height: 65px;
+  margin: auto;
+}
+* #header .header-nav .header-logo {
+  margin-top: 10px;
+}
+* #header .header-nav .header-right {
+  float: right;
+  width: 70%;
+  margin-right: 0;
+}
+* #header .header-nav .header-right ul {
+  list-style: none;
+  overflow: hidden;
+}
+* #header .header-nav .header-right ul li {
+  float: left;
+  display: block;
+  line-height: 65px;
+  margin-left: 28px;
+}
+* #header .header-nav .header-right ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+* #header .header-nav .header-right ul li a:hover {
+  color: red;
+}
+* #header .header-nav .header-right ul .header-city {
+  margin-right: 50px;
+}
+* #header .header-nav .header-right ul .header-home {
+  color: red;
+}
+* #header .header-nav .header-right ul .Merchant-login .shanghu {
+  background: #e94840;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 6px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+* #container {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+* #container .bg-images {
+  width: 100%;
+  height: 420px;
+  background: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+* #container .bg-images ul > li {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  height: 420px;
+}
+* #container .bg-images .bg1 {
+  background-image: url("../images/banner1.jpg");
+  height: 420px;
+  position: absolute;
+  background-position: -280px 0;
+}
+* #container .bg-images .bg2 {
+  background-image: url("../images/banner2.jpg");
+  height: 420px;
+  position: absolute;
+  background-position: -280px 0;
+}
+* #container .bg-images .bg3 {
+  background-image: url("../images/banner3.jpg");
+  height: 420px;
+  position: absolute;
+  background-position: -280px 0;
+}
+* #container #position {
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0.4;
+  width: 400px;
+  text-align: center;
+}
+* #container #position li {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #afafaf;
+}
+* #container #position .cur {
+  background-color: #ff0000;
+}
+* #container .banner-nav {
+  position: absolute;
+  bottom: 0px;
+  left: 110px;
+  width: 180px;
+  background-color: #757881;
+}
+* #container .banner-nav ul {
+  width: 180px;
+  height: 420px;
+}
+* #container .banner-nav ul li {
+  padding-left: 45px;
+  height: 42px;
+  line-height: 42px;
+}
+* #container .banner-nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+* #container .banner-nav ul li a i {
+  font-style: normal;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 70px;
+}
+* #container .banner-nav ul li a .menu-img {
+  margin-left: 20px;
+}
+* .sever-home {
+  margin: auto;
+  width: 90%;
+  padding-bottom: 20px;
+}
+* .sever-home .sever-container {
+  width: 100%;
+  padding-top: 50px;
+}
+* .sever-home .sever-container .service-list {
+  text-align: center;
+  padding-bottom: 20px;
+}
+* .sever-home .sever-container .service-list span {
+  color: #3d3838;
+  font-weight: 800;
+  font-size: 28px;
+  font-family: 微软雅黑;
+}
+* .sever-home .sever-container .service-list .serviceType {
+  margin-top: 15px;
+  display: block;
+}
+* .sever-home .sever-container .service-list .serviceType a {
+  font-size: 22px;
+  color: #3d3838;
+}
+* .sever-home .sever-container .service-list .serviceType a:hover {
+  color: red ;
+}
+* .sever-home .sever-container .shop-list .more {
+  float: right;
+  margin-top: -38px;
+}
+* .sever-home .sever-container .shop-list .row {
+  height: 345px;
+}
+* .sever-home .sever-container .shop-list .row a > div {
+  float: left;
+  padding: 10px;
+  width: 208px;
+  height: 323px;
+  border: 1px solid #eaeaea;
+  margin: 0 5px;
+  background: #fff;
+}
+* .sever-home .sever-container .shop-list .row a > div img {
+  width: 210px;
+  height: 210px;
+}
+* .sever-home .sever-container .shop-list .row a > div .serviceName {
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: 800;
+  color: #000;
+  height: 15px;
+}
+* .sever-home .sever-container .shop-list .row a > div .description {
+  color: #929292;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 18px;
+  height: 44px;
+}
+* .sever-home .sever-container .shop-list .row a > div .price {
+  font-size: 14px;
+  padding: 5px 5px;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  color: #fb474f;
+}
+* .sever-home .sever-container .shop-list .row a > div .price .price1 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #fb474f;
+  font-weight: 600;
+}
+* .sever-home .sever-container .shop-list .row a > div .price .btn {
+  float: right;
+  background-color: #fb474f;
+  color: #fff;
+  width: 76px;
+  height: 24px;
+  text-align: center;
+  border-radius: 5px;
+}
+* .baozhang {
+  text-align: center;
+  width: 100%;
+  padding-top: 60px;
+  background: #fff;
+}
+* .baozhang h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  font-weight: 600;
+}
+* .baozhang h2 i {
+  font-style: normal;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  font-weight: 600;
+  color: #fb474f;
+}
+* .baozhang p {
+  font-size: 22px;
+  color: #3d3838;
+}
+* .baozhang2 {
+  width: 100%;
+  padding-top: 20px;
+  background: #fff;
+  height: 66px;
+  font-family: "微软雅黑";
+}
+* .baozhang2 ul {
+  font-size: 18px;
+  width: 420px;
+  margin: auto;
+}
+* .baozhang2 ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+* .baozhang2 ul li img {
+  vertical-align: middle;
+}
+* .footer {
+  padding-top: 50px;
+  height: 170px;
+  background: #fff;
+}
+* .footer dl {
+  width: 1200px;
+  margin: 0 auto;
+}
+* .footer dl dt {
+  float: left;
+  font-family: " 微软雅黑";
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+* .footer dl dd {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+* .footer dl dd a {
+  width: 90px;
+  height: 30px;
+}
