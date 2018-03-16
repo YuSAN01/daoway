@@ -73,11 +73,13 @@
       background: #FFF;
       position: relative;
       overflow: hidden;
-      ul>li{
-        float: left;
-        overflow: hidden;
-        width: 100%;
-        height: 420px;
+      ul{
+        li{
+          float: left;
+          overflow: hidden;
+          width: 100%;
+          height: 420px;
+        }
       }
       .bg1{
         background-image: url("../images/banner1.jpg");
@@ -122,40 +124,73 @@
         background-color: #ff0000;
       }
     }
-    .banner-nav{
-      position: absolute;
-      bottom: 0px;
-      left: 110px;
+    //左侧菜单
+    #nav-banner{
       width: 180px;
-      background-color: #757881;
-      ul{
+      position: absolute;
+      top:0;
+      left: 100px;
+      z-index: 100;
+      .banner-list{
         width: 180px;
+        background: #757881;
         height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         li{
-          padding-left: 45px;
-          //text-align-last: justify;
           height: 42px;
           line-height: 42px;
-          a{
-            display: block;
-            width: 100%;
-            height: 100%;
-            i{
-              font-style: normal;
-              color: #ffffff;
-              font-size: 16px;
-              font-weight: bold;
-              width: 70px;
-            }
-            .menu-img{
-              //position: absolute;
-              //right: 30px;
-              //top:17px;
-              margin-left: 20px;
-            }
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          padding-left: 45px;
+          position: relative;
+          p{
+            font-weight: bold;
           }
+          .right_icon{
+            position: absolute;
+            right: 35px;
+            top: 20px;
+          }
+          .icon{
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            display: none;
+
+          }
+          //二级菜单
+          ul{
+            position: absolute;
+            left: 180px;
+            background: rgba(255,255,255,0.9);
+            width: 160px;
+            height: 420px;
+            top:0;
+            li{
+              height: 42px;
+              line-height: 42px;
+              color: #fff;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            a{
+              font-weight: bold;
+              color: #121212;
+            }
+            a:hover{
+              color: #e94840;
+              transition: color 0.5s;
+            }
+
+          }
+
         }
+
       }
+
     }
   }
   //家庭保洁
@@ -296,6 +331,7 @@
       }
     }
   }
+  //城市切换
   .footer{
     padding-top: 50px;
     height: 170px;
@@ -319,6 +355,36 @@
           height: 30px;
         }
       }
+    }
+  }
+  //底部赞助商
+  .Supplier{
+    width: 88%;
+    text-align: center;
+    margin: 0 auto;
+    p{
+      width: 1200px;
+      margin-top: 50px;
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 50px;
+    }
+    ul{
+
+      justify-content: space-around;
+      display: flex;
+      li{
+        width: 10%;
+        line-height: 50px;
+        img{
+
+          width: 100%;
+        }
+      }
+    }
+    div{
+      text-align: left;
     }
   }
 }
