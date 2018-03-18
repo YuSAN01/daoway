@@ -1,3 +1,8 @@
-/**
- * Created by Yu on 2018/3/17.
- */
+const  mongoose = require('mongoose')
+const shopSchemaa = new mongoose.Schema({
+    title:{type:String},
+    orderCount:{type:Number},
+    positiveRate:{type:String},
+    imgUrl:{type:String}
+})
+module.exports = mongoose.model('services',shopSchemaa)

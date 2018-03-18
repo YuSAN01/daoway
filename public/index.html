@@ -28,7 +28,7 @@
                         <a href="">到位APP</a>
                     </li>
                     <li>
-                        <a href="">服务商</a>
+                        <a href="./service-1.html">服务商</a>
                     </li>
                     <li>
                         <a href="">商家入驻</a>
@@ -747,7 +747,7 @@
     </div>
 </body>
 <script type="text/javascript" src="JS/jquery.1.10.2.js"></script>
-
+<!--首页服务内容列表-->
 <script id="templ" type="text/html">
     {{each data.data}}
     <div class="sever-home">
@@ -768,7 +768,7 @@
                     {{each $value.shopList}}
                     <a href="">
                         <div>
-                            <img src="{{$value.imgUrl}}" alt="">
+                            <img src="{{$value.imgUrl}}">
                             <div class="serviceName">{{$value.serviceName}}</div>
                             <div class="description">{{$value.description}}</div>
                             <div class="price">
@@ -785,6 +785,7 @@
     </div>
     {{/each}}
 </script>
+
 <script type="text/javascript">
     $(function () {
         $.get('/getShopList',function (data) {

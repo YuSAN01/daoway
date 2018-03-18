@@ -1,3 +1,18 @@
-/**
- * Created by Yu on 2018/3/17.
- */
+const  mongoose = require('mongoose')
+const shopItems = new mongoose.Schema({
+    title:{type:String},
+    name:{type:String},
+    desc:{type:String},
+    price:{type:Number},
+    oldPrice:{type:Number},
+    orderCount:{type:Number},
+    soldCount:{type:Number},
+    commentCount:{type:Number},
+    accept:{type:String},
+    praise:{type:String},
+    imgUrl:{type:String},
+    company:{type:String},
+    profile:{type:String}
+}, {connection: "item"}
+)
+module.exports = mongoose.model('item',shopItems)
